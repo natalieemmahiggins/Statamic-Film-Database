@@ -1,0 +1,48 @@
+title: Film
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: rating
+            field:
+              type: float
+              display: Rating
+              width: 50
+          -
+            handle: popularity
+            field:
+              type: float
+              display: Popularity
+              width: 50
+          -
+            handle: overview
+            field:
+              type: textarea
+              display: Overview
+          -
+            handle: release_date
+            field:
+              type: date
+              display: 'Release Date'
+              width: 50
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
