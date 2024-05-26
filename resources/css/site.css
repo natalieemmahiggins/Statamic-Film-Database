@@ -1,5 +1,52 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 /* This is all you. */
+
+body {
+    font-family: "Lato", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.bg-87{
+    @apply bg-green-800;
+}
+
+.bg-86{
+    @apply bg-emerald-800;
+}
+
+.bg-85{
+    @apply bg-teal-800;
+}
+
+.bg-84{
+    @apply bg-cyan-800;
+}
+
+.bg-83{
+    @apply bg-sky-800;
+}
+
+.bg-82{
+    @apply bg-blue-800;
+}
+
+.bg-81{
+    @apply bg-indigo-800;
+}
+
+.bg-80{
+    @apply bg-violet-800;
+}
+
+.bg-79{
+    @apply bg-purple-800;
+}
+
+.bg-78{
+    @apply bg-fuchsia-800;
+}

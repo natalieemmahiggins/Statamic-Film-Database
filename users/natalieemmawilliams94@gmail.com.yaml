@@ -6,3 +6,8 @@ preferences:
   collections:
     films:
       per_page: 100
+      columns:
+        - title
+        - slug
+        - popularity
+        - rating
