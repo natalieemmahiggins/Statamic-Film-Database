@@ -22,7 +22,7 @@ class Films extends Component
         'Date (Asc)' => ['release_date', 'asc'],
         'Date (Desc)' => ['release_date', 'desc'],
         'Popularity (Asc)' => ['popularity', 'asc'],
-        'Populatiry (Desc)' => ['popularity', 'desc'],
+        'Popularity (Desc)' => ['popularity', 'desc'],
     ];
 
     public $minRating = 7.8;
