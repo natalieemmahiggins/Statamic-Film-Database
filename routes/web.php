@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 //    'title' => 'Example'
 // ]);
 
-Route::get('/get-films', 'App\Http\Controllers\ApiController@get');
+//Route::get('/get-films', 'App\Http\Controllers\ApiController@get');
 
 Route::post('/members/authenticate', 'App\Http\Controllers\LoginController@authenticate');
 
