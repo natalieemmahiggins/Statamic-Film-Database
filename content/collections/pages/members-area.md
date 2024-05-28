@@ -6,4 +6,5 @@ author: 0b75e100-0a95-42ef-9176-1981014cb897
 template: members-area
 updated_by: 0b75e100-0a95-42ef-9176-1981014cb897
 updated_at: 1716711768
+protect: logged_in
 ---

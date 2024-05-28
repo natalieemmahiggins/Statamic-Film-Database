@@ -1,11 +1,11 @@
 ---
-id: home
-blueprint: pages
-title: Home
-template: default
+id: e3f1da6e-3cd9-4140-a35a-1c9f96f7265a
+blueprint: page
+title: About
 author: 0b75e100-0a95-42ef-9176-1981014cb897
+template: default
 updated_by: 0b75e100-0a95-42ef-9176-1981014cb897
-updated_at: 1716923252
+updated_at: 1716923200
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut tortor aliquet, placerat nisl quis, porttitor nibh. Maecenas rhoncus porttitor ex. Aliquam imperdiet, lorem ac convallis iaculis, augue neque consequat massa, eget pharetra nibh nulla eget lacus. Praesent id molestie felis. Maecenas dapibus at nibh ac dictum. Donec eget tristique odio. Praesent sit amet mauris felis. Integer a odio mattis, consequat mi sed, bibendum tellus. Cras vitae nibh nisl. Praesent non sollicitudin est, et auctor ex. Praesent accumsan quam ultricies, hendrerit odio faucibus, ornare sapien. Fusce efficitur non libero a ullamcorper. Aenean vitae justo sit amet tellus convallis viverra a sed mauris. Proin ut neque dignissim, lobortis diam sed, consectetur mi.
 

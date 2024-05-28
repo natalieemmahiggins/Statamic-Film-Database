@@ -1,0 +1,32 @@
+<div class="bg-slate-600 text-white w-full">
+    <div class="container mx-auto px-6 py-6 lg:py-12 flex items-center justify-between flex-col lg:flex-row space-y-3 lg:space-y-0">
+
+        <a href="/" class=text-xl>Statamic Film Database</a>
+
+        <ul class="flex space-x-5">
+            {{ nav:main_nav }}
+                <li><a href="{{ url }}" class="hover:underline">{{ title }}</a></li>
+            {{ /nav:main_nav }}
+        </ul>
+
+        {{ if logged_in }}
+            <form class="" method="POST" action="/logout">
+                {{ csrf_field }}
+                <button type="submit" class="px-3 py-2 bg-slate-700 hover:bg-slate-800  text-white rounded-sm">
+                Log out
+                </button>
+            </form>
+        {{ else }}
+            <a href="/members-login">
+                <button class="px-3 py-2 bg-slate-700 hover:bg-slate-800  text-white rounded-sm">
+                    Log in
+                </button>
+            </a>
+        {{ /if }}
+
+        
+
+        
+        
+    </div>
+</div>

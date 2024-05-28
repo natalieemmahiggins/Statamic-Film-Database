@@ -50,3 +50,7 @@ body {
 .bg-78{
     @apply bg-fuchsia-800;
 }
+
+.content p{
+    @apply mb-4;
+}
