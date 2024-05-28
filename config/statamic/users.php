@@ -113,9 +113,9 @@ return [
     */
 
     'passwords' => [
-        'resets' => 'users',
-        'activations' => 'activations',
-    ],
+    'resets' => 'statamic_resets',
+    'activations' => 'statamic_activations',
+],
 
     /*
     |--------------------------------------------------------------------------
@@ -148,7 +148,7 @@ return [
     */
 
     'guards' => [
-        'cp' => 'web',
+        'cp' => 'statamic',
         'web' => 'web',
     ],
 
