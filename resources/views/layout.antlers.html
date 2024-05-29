@@ -8,7 +8,7 @@
         {{ vite src="resources/js/site.js|resources/css/site.css" }}
         {{ livewire:styles }}
     </head>
-    <body class="{{slug}}">
+    <body class="{{slug}}" x-data="{ navOpen: false }">
         {{ partial src="parts/header"}}
         {{ template_content }}
         {{ livewire:scripts }}

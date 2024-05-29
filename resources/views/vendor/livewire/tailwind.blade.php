@@ -15,21 +15,21 @@ $scrollIntoViewJsSnippet = ($scrollTo !== false)
         <nav role="navigation" aria-label="Pagination Navigation" class="">
             <div class="flex items-center justify-center w-full py-10 space-x-5">
                 @if ($paginator->onFirstPage())
-                    <div class="px-3 py-2 bg-slate-700 text-white rounded-sm opacity-50">
+                    <div class="btn opacity-50">
                         {!! __('pagination.previous') !!}
                     </div>
                 @else
-                    <button type="button" wire:click="previousPage('{{ $paginator->getPageName() }}')" x-on:click="{{ $scrollIntoViewJsSnippet }}" wire:loading.attr="disabled" dusk="previousPage{{ $paginator->getPageName() == 'page' ? '' : '.' . $paginator->getPageName() }}.before" class="px-3 py-2 bg-slate-700 text-white rounded-sm">
+                    <button type="button" wire:click="previousPage('{{ $paginator->getPageName() }}')" x-on:click="{{ $scrollIntoViewJsSnippet }}" wire:loading.attr="disabled" dusk="previousPage{{ $paginator->getPageName() == 'page' ? '' : '.' . $paginator->getPageName() }}.before" class="btn">
                         {!! __('pagination.previous') !!}
                     </button>
                 @endif
 
                 @if ($paginator->hasMorePages())
-                    <button type="button" wire:click="nextPage('{{ $paginator->getPageName() }}')" x-on:click="{{ $scrollIntoViewJsSnippet }}" wire:loading.attr="disabled" dusk="nextPage{{ $paginator->getPageName() == 'page' ? '' : '.' . $paginator->getPageName() }}.before" class="px-3 py-2 bg-slate-700 text-white rounded-sm">
+                    <button type="button" wire:click="nextPage('{{ $paginator->getPageName() }}')" x-on:click="{{ $scrollIntoViewJsSnippet }}" wire:loading.attr="disabled" dusk="nextPage{{ $paginator->getPageName() == 'page' ? '' : '.' . $paginator->getPageName() }}.before" class="btn">
                         {!! __('pagination.next') !!}
                     </button>
                 @else
-                    <div class="px-3 py-2 bg-slate-700 text-white rounded-sm opacity-50">
+                    <div class="btn opacity-50">
                         {!! __('pagination.next') !!}
                     </div>
                 @endif
