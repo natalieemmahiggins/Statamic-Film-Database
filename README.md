@@ -1,40 +1,48 @@
-<p align="center"><img src="https://statamic.com/assets/branding/Statamic-Logo+Wordmark-Rad.svg" width="400" alt="Statamic Logo" /></p>
+# Statamic Film Database
 
-## About Statamic
+Built with SALT Stack (Statamic, Alpine.js, Livewire and Tailwind Css)
 
-Statamic is the flat-first, Laravel + Git powered CMS designed for building beautiful, easy to manage websites.
+This site holds the 500 top rated films from the TMDB API. 
 
-> **Note:** This repository contains the code for the Statamic application. To contribute to the core package, visit the [Statamic core package repository][cms-repo].
+The api data is saved as film collection entries within Statamic and is editable from the admin. 
 
+The results are displayed in a listing which can be searched, sorted and filtered using Livewire.
 
-## Learning Statamic
+The site users (members) are stored in a database, separate to the Statamic /cp users.
 
-Statamic has extensive [documentation][docs]. We dedicate a significant amount of time and energy every day to improving them, so if something is unclear, feel free to open issues for anything you find confusing or incomplete. We are happy to consider anything you feel will make the docs and CMS better.
+The listing page is available to members only, while the home and about pages are visible to the public. 
 
-## Support
-
-We provide official developer support on [Statamic Pro](https://statamic.com/pricing) projects. Community-driven support is available on the [forum](https://statamic.com/forum) and in [Discord][discord].
-
-
-## Contributing
-
-Thank you for considering contributing to Statamic! We simply ask that you review the [contribution guide][contribution] before you open issues or send pull requests.
+On protected routes, users are redirected to the relevant login pages where unauthenticated (/cp/auth/login or /members-login)
 
 
-## Code of Conduct
+## Usage
 
-In order to ensure that the Statamic community is welcoming to all and generally a rad place to belong, please review and abide by the [Code of Conduct](https://github.com/statamic/cms/wiki/Code-of-Conduct).
+Clone the repo
 
+Create .env (see .env.example)
+Configure your local database e.g.
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=statamic_film_database
+DB_USERNAME=root
+DB_PASSWORD=
+```
 
-## Important Links
+And add your TMDB Bearer as ‘Bearer {bearertoken}’ e.g.
+```
+TMDB_BEARER='Bearer {bearertoken}'
+```
 
-- [Statamic Main Site](https://statamic.com)
-- [Statamic Documentation][docs]
-- [Statamic Core Package Repo][cms-repo]
-- [Statamic Migrator](https://github.com/statamic/migrator)
-- [Statamic Discord][discord]
+Run the following commands in the terminal
+```
+composer install
+npm install
+npm run build
+php artisan migrate
+php artisan db:seed 
+php artisan key:generate
+```
 
-[docs]: https://statamic.dev/
-[discord]: https://statamic.com/discord
-[contribution]: https://github.com/statamic/cms/blob/master/CONTRIBUTING.md
-[cms-repo]: https://github.com/statamic/cms
+Running Laravel Herd open http://statamic-film-database.test/ (or equivalent)
